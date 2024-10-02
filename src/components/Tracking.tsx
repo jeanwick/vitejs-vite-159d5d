@@ -70,4 +70,14 @@ const Tracking: React.FC = () => {
         <ul>
           {trackingData.map((event) => (
             <li key={event.eventID}>
-              <strong>Event
+              <strong>Event ID:</strong> {event.eventID}, <strong>Booking Reference:</strong>{' '}
+              {event.carrierBookingReference}
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
+  );
+};
+
+export default Tracking;
